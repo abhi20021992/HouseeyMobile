@@ -1,0 +1,16 @@
+form{
+  padding:15px;
+}
+.houseey-btn-theme{
+  background-color: rgba(255,23,68,.88);
+  cursor: pointer;
+  border-color: rgba(255,23,68,.88);
+}        
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: rgba(255,23,68,.88);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(255,23,68,.20);
+}

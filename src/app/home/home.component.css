@@ -1,0 +1,123 @@
+.houseey-search-main .input-group{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 0px !important;
+    margin-left: 0px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../../assets/images/homebg-bangalore.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.houseey-search-main-form{
+    padding-top: 10%;
+}
+
+.houseey-search-main #searchMain{
+    padding: 20px;
+    border-radius: 5px;
+    border-right: none;
+}   
+
+.houseey-search-main .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.houseey-search-main .btn{
+    color: #fff;
+    background-color: rgba(255,23,68,.88);
+    border-color: rgba(255,23,68,.20);
+}
+
+.houseey-fav-container{
+    margin-top: 110px;
+}
+
+.houseey-fav-bar{
+    background: rgba(255,23,68,.88);
+    padding: 0px 5px 0px 5px;
+    bottom: 0;
+    margin-top: 100px;
+    margin-bottom: 0;
+    margin-top: -15px;
+    text-align: center;
+}
+
+.houseey-fav-bar-item{
+        color: white;
+    font-size: 22px;
+}
+
+.houseey-fav-bar-item-parent{
+    border-bottom: white 2px solid;
+    line-height: 35px;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.houseey-fav-bar-link{
+      color: white;
+    font-size: 16px;
+}
+
+.property-container{
+   background-color: white;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.property-container-head{
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
+.property-developer-container{
+    background-color: white;
+        padding-bottom: 25px; 
+}
+
+@media (min-width: 768px){
+    .property-developer-container .row:first-child{
+        padding-left: 15%;
+    }    
+}
+.property-developer-container .row:first-child{
+    padding-top: 25px;
+}
+
+.developer-menu-heading{
+    font-size: 50px;
+    text-decoration: none;
+    background-color: transparent;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: lighter;
+    line-height: 1.4;
+}
+
+.explore-more-button{
+    background: #eb224a;
+    border: 1px solid #eb224a;
+    border-radius: 4px;
+    padding: 6px 42px;
+    color: #fff;
+}
+

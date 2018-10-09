@@ -1,0 +1,107 @@
+<div class="row">
+	<div class="col-12">
+		<form method="post" class="search-form col-12">
+				<ng-template #rt let-r="result" let-t="term">
+						<span><label>{{r.name}}</label><span style="display:none">{{r.key}}</span></span>
+				</ng-template>
+				<input
+				id="typeahead-focus"
+				type="text"
+				class="col-9 textbox"
+				[(ngModel)]="model"
+				[ngModelOptions]="{standalone: true}"
+				[ngbTypeahead]="search"
+				#instance="ngbTypeahead"
+				(selectItem)="selectedItem($event)"
+				[resultFormatter]="formatter"
+				[resultTemplate]="rt"
+				placeholder="Search by Developer, Project or Location"
+			/>
+			
+		  <input title="Search" value="" type="button" class="button col-3">
+		</form>
+	</div>
+</div>
+<div class="row">
+	<div class="col-12" id="search-group">
+		<p></p>
+
+		<ngb-accordion [closeOthers]="true">
+		  <ngb-panel title="Developers" id="config-panel-one">
+		    <ng-template ngbPanelContent>
+		      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+		      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+		      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+		      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+		      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+		      labore sustainable VHS.
+		    </ng-template>
+		  </ngb-panel>
+		  <ngb-panel title="Locations">
+		    <ng-template ngbPanelContent>
+		      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+		      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+		      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+		      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+		      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+		      labore sustainable VHS.
+		    </ng-template>
+			</ngb-panel>
+			<ngb-panel title="Units">
+		    <ng-template ngbPanelContent>
+		      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+		      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+		      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+		      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+		      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+		      labore sustainable VHS.
+		    </ng-template>
+			</ngb-panel>
+			<ngb-panel title="Projects">
+		    <ng-template ngbPanelContent>
+		      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+		      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+		      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+		      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+		      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+		      labore sustainable VHS.
+		    </ng-template>
+		  </ngb-panel>
+		</ngb-accordion>
+
+	</div>
+</div>
+<div class="row">
+	<div class="col-12">
+			<div class="property-container container-fluid">
+					<div class="property-container-head">
+							<a>BANGALORE PROPERTIES</a>
+					</div>
+					<div class="property-content">
+							<ngb-carousel *ngIf="images">
+								<ng-template ngbSlide>
+									<img [src]="images[0]" alt="Random first slide">
+									<div class="carousel-caption">
+										<h3>First slide label</h3>
+										<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+									</div>
+								</ng-template>
+								<ng-template ngbSlide>
+									<img [src]="images[1]" alt="Random second slide">
+									<div class="carousel-caption">
+										<h3>Second slide label</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									</div>
+								</ng-template>
+								<ng-template ngbSlide>
+									<img [src]="images[2]" alt="Random third slide">
+									<div class="carousel-caption">
+										<h3>Third slide label</h3>
+										<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+									</div>
+								</ng-template>
+							</ngb-carousel>
+					</div>
+			</div>
+	</div>
+</div>

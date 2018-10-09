@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-houseey">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    <img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/ftr-houseey.png" height="30" style="margin-bottom:-10px;" alt="India" />
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar-houseey">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar-houseey" [ngbCollapse]="isCollapsed">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" ngbDropdown>
+           <div class="d-inline-block">
+             <a class="nav-link" href="#" ngbDropdownToggle>{{selectedCityName}}</a>
+             <div ngbDropdownMenu aria-labelledby="City Dropdown" class="dropdown-container">
+                <button class="dropdown-item" *ngFor ="let city of cities"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/{{city.name}}.png" style="display:inline-flex;vertical-align: middle;" height="25px" width="25px">
+                  <span class="title">{{city.name}}</span>
+               </button>
+              
+            </div>
+          </div>
+        </li>
+         <li class="nav-item" ngbDropdown>
+           <div class="d-inline-block">
+             <a class="nav-link" href="#" ngbDropdownToggle>Contact Us</a>
+             <div ngbDropdownMenu aria-labelledby="Contact Dropdown" class="contact-us">
+               <button class="dropdown-item"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/in.svg" style="display:inline-flex;vertical-align: middle;" height="25px" width="25px">
+                  <span class="title">(+91)-(080 40984147)</span>
+               </button>
+                <button class="dropdown-item"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/sg.svg" style="display:inline-flex;vertical-align: middle;" height="25px" width="25px">
+                  <span class="title">(+65)-(87325813)</span>
+               </button>
+                <button class="dropdown-item"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/whatsapp.png" style="display:inline-flex;vertical-align: middle;" height="25px" width="25px">
+                  <span class="title">(+91)-(9810517170)</span>
+               </button>
+                <button class="dropdown-item"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/in.svg" style="display:inline-flex;vertical-align: middle;" height="25px" width="25px">
+                  <span class="title">contact@houseey.com</span>
+               </button>
+               
+                
+            </div>
+          </div>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+         
+      <!--   <li class="nav-item">
+          <a class="nav-link" href="#">Terms & Conditions</a>
+        </li>
+        <li  class="nav-item">
+          <form class="form-inline">
+            <div class="input-group search-box">
+              <input type="text" class="form-control" placeholder="What are you looking for?" aria-label="Search for...">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button"><i class="fa fa-search" style="font-size:24px"></i></button>
+              </span>
+            </div>
+          </form>
+        </li> -->
+      </ul>
+      <ul class="navbar-nav navbar-right" >
+          <li class="nav-item" style="padding-top: 8px;padding-right: 10px;" ><a href="#" class="login-link" (click)="open('news')"><i class="fa fa-newspaper-o" style="font-size: 15px;"></i> <span>Subscribe</span></a></li>
+          <li class="nav-item" style="padding-top: 8px;" ><a href="#" class="login-link" (click)="open('login')"><i class="fa fa-id-badge" style="font-size: 15px;"></i> <span>Login</span></a></li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>

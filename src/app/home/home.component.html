@@ -1,0 +1,360 @@
+<div class="parallax">
+    <form class="houseey-search-main-form">
+      <div class="form-group houseey-search-main col-12 col-md-8 offset-md-2">
+        <div class="input-group row">
+          <input id="searchMain" class="form-control col-12 col-sm-8 col-md-8" title="Search by Locality, Developer, Landmark or Project" placeholder="Search by Locality, Developer, Landmark or Project" name="searchMain" type="text" (click)="open()">
+          <button class="btn btn-primary col-12 col-sm-4 col-md-4" >Explore city map view</button>
+        </div>
+      </div>
+    </form>
+    <div class="houseey-fav-container">
+        <div class="row houseey-fav-bar">
+          <div class="col-md-3 col-sm-6 col-12 houseey-fav-bar-item-parent"><div class="houseey-fav-bar-item">Pre Launch Projects</div><a class="houseey-fav-bar-link" href="">load more...</a></div>
+          <div class="col-md-3 col-sm-6 col-12 houseey-fav-bar-item-parent"><div class="houseey-fav-bar-item">Hot Projects</div><a class="houseey-fav-bar-link" href="">load more...</a></div>
+           <div class="col-md-3 col-sm-6 col-12 houseey-fav-bar-item-parent"><div class="houseey-fav-bar-item">Ready to Move</div><a class="houseey-fav-bar-link" href="">load more...</a></div>
+            <div class="col-md-3 col-sm-6 col-12 houseey-fav-bar-item-parent"><div class="houseey-fav-bar-item">Hot Projects</div><a class="houseey-fav-bar-link" href="">load more...</a></div>
+
+        </div>
+    </div>  
+    <div class="property-container container-fluid">
+        <div class="property-container-head">
+            <a>BANGALORE PROPERTIES</a>
+        </div>
+        <div class="property-content">
+            <ngb-carousel *ngIf="images">
+              <ng-template ngbSlide>
+                <img [src]="images[0]" alt="Random first slide">
+                <div class="carousel-caption">
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <img [src]="images[1]" alt="Random second slide">
+                <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <img [src]="images[2]" alt="Random third slide">
+                <div class="carousel-caption">
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+              </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+    <div class="property-developer-container container-fluid">
+        <div class="row ">
+            <div class="col-12 col-sm-5 col-md-3">
+                <label class="developer-menu-heading">
+                    SEARCH YOUR HOME BY BANGALORE DEVELOPER
+                </label>
+                <div>
+                    <button class="explore-more-button"><a target="_blank" style="color:white" href="/all-developer-bangalore/"> explore more</a></button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-7 col-md-9">
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3">
+                        <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                         <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                         <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                         <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3">
+                         <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                         <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                         <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                         <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3">
+                         <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                         <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                         <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3">
+                         <div class="card border-success mb-3">
+                          <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="property-container container-fluid">
+        <div class="property-container-head">
+            <a>BANGALORE PROPERTIES</a>
+        </div>
+        <div class="property-content">
+            <ngb-carousel *ngIf="images">
+              <ng-template ngbSlide>
+                <img [src]="images[0]" alt="Random first slide">
+                <div class="carousel-caption">
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <img [src]="images[1]" alt="Random second slide">
+                <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <img [src]="images[2]" alt="Random third slide">
+                <div class="carousel-caption">
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+              </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+    <div class="property-container container-fluid">
+        <div class="row">
+            <h2 class="mobileh2" style="text-align:center;font-weight:lighter"> How Houseey Will Support You ?</h2>
+        </div>
+        <div class="row" style="text-align:center">
+            <img width="100%;" src="https://d3e6ys0v0tcm7i.cloudfront.net/images/roadmap_new.jpg" alt="">
+        </div>
+    </div>
+    <div class="property-container container-fluid">
+        <div class="row">
+        <div id="historyTable" class="col-12 col-sm-12 col-md-6">
+            <table id="table-sparkline" class="striped responsive-table">
+                <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Per Sqft</th>
+                    <th>Growth</th>
+                </tr>
+            </thead>
+            <tbody id="tbody-sparkline">
+
+                    <tr id="chart0">
+                        <th style="cursor:pointer;text-decoration:underline" onclick="renderTrendGraph('4300-3-2014,3375-4-2014,3974-1-2015,4800-3-2015,4556-2-2015,4919-4-2015,4942-1-2016,5032-3-2016,4988-2-2016,5004-4-2016,5036-1-2017','Sarjapur')">Sarjapur</th>
+                        <td>₹ 5036</td>
+                            <td>
+                                <span class="growth"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/arrow.png"></span>
+                                <span>₹ 32/sqft</span>
+                             </td>
+                                            </tr>
+                    <tr id="chart1">
+                        <th style="cursor:pointer;text-decoration:underline" onclick="renderTrendGraph('4200-3-2014,4400-4-2014,4500-1-2015,4550-2-2015,4782-4-2015,4650-3-2015,4797-1-2016,4832-2-2016,4885-3-2016,4861-4-2016,4896-1-2017','White Field')">White Field</th>
+                        <td>₹ 4896</td>
+                            <td>
+                                <span class="growth"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/arrow.png"></span>
+                                <span>₹ 35/sqft</span>
+                             </td>
+                                            </tr>
+                    <tr id="chart2">
+                        <th style="cursor:pointer;text-decoration:underline" onclick="renderTrendGraph('3150-3-2014,3400-4-2014,3446-1-2015,3620-2-2015,3850-3-2015,3906-4-2015,3950-1-2016,4044-3-2016,4023-4-2016,4014-2-2016,4053-1-2017','Electronic City')">Electronic City</th>
+                        <td>₹ 4053</td>
+                            <td>
+                                <span class="growth"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/arrow.png"></span>
+                                <span>₹ 39/sqft</span>
+                             </td>
+                                            </tr>
+                    <tr id="chart3">
+                        <th style="cursor:pointer;text-decoration:underline" onclick="renderTrendGraph('4239-3-2014,4197-4-2014,4186-1-2015,4700-2-2015,4800-3-2015,4943-4-2015,5054-1-2016,5124-2-2016,5167-3-2016,5144-4-2016,5169-1-2017','Hennur')">Hennur</th>
+                        <td>₹ 5169</td>
+                            <td>
+                                <span class="growth"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/arrow.png"></span>
+                                <span>₹ 25/sqft</span>
+                             </td>
+                                            </tr>
+                    <tr id="chart4">
+                        <th style="cursor:pointer;text-decoration:underline" onclick="renderTrendGraph('4326-3-2014,4483-4-2014,4369-1-2015,4700-3-2015,4600-2-2015,4836-4-2015,4853-1-2016,4957-3-2016,4924-4-2016,4906-2-2016,4950-1-2017','Yelahanka')">Yelahanka</th>
+                        <td>₹ 4950</td>
+                            <td>
+                                <span class="growth"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/arrow.png"></span>
+                                <span>₹ 44/sqft</span>
+                             </td>
+                                            </tr>
+                    <tr id="chart5">
+                        <th style="cursor:pointer;text-decoration:underline" onclick="renderTrendGraph('4975-3-2014,5318-4-2014,5797-2-2015,5434-1-2015,6000-3-2015,6032-4-2015,6089-1-2016,6132-2-2016,6173-3-2016,6139-4-2016,6174-1-2017','Bellandur')">Bellandur</th>
+                        <td>₹ 6174</td>
+                            <td>
+                                <span class="growth"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/arrow.png"></span>
+                                <span>₹ 35/sqft</span>
+                             </td>
+                                            </tr>
+                    <tr id="chart6">
+                        <th style="cursor:pointer;text-decoration:underline" onclick="renderTrendGraph('3455-3-2014,3958-4-2014,4157-1-2015,4100-2-2015,4400-3-2015,4481-4-2015,4506-1-2016,4546-2-2016,4596-3-2016,4550-4-2016,4575-1-2017','Devanahalli')">Devanahalli</th>
+                        <td>₹ 4575</td>
+                            <td>
+                                <span class="growth"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/arrow.png"></span>
+                                <span>₹ 25/sqft</span>
+                             </td>
+                                            </tr>
+                    <tr id="chart7">
+                        <th style="cursor:pointer;text-decoration:underline" onclick="renderTrendGraph('4537-3-2014,4815-4-2014,4642-1-2015,4791-2-2015,4850-3-2015,5010-4-2015,5126-1-2016,5195-2-2016,5227-3-2016,5206-4-2016,5238-1-2017','Kanakapura')">Kanakapura</th>
+                        <td>₹ 5238</td>
+                            <td>
+                                <span class="growth"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/arrow.png"></span>
+                                <span>₹ 32/sqft</span>
+                             </td>
+                                            </tr>
+                    <tr id="chart8">
+                        <th style="cursor:pointer;text-decoration:underline" onclick="renderTrendGraph('4750-3-2014,5250-4-2014,5400-1-2015,5000-3-2015,5099-4-2015,4990-2-2015,5169-1-2016,5200-2-2016,5244-3-2016,5197-4-2016,5220-1-2017','J.P. Nagar')">J.P. Nagar</th>
+                        <td>₹ 5220</td>
+                            <td>
+                                <span class="growth"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/arrow.png"></span>
+                                <span>₹ 23/sqft</span>
+                             </td>
+                                            </tr>
+                    <tr id="chart9">
+                        <th style="cursor:pointer;text-decoration:underline" onclick="renderTrendGraph('4500-3-2014,4540-4-2014,5030-1-2015,5050-2-2015,5200-3-2015,5278-4-2015,5298-1-2016,5359-2-2016,5400-3-2016,5369-4-2016,5403-1-2017','Bannerghatta')">Bannerghatta</th>
+                        <td>₹ 5403</td>
+                            <td>
+                                <span class="growth"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/arrow.png"></span>
+                                <span>₹ 34/sqft</span>
+                             </td>
+                                            </tr>
+                    <tr id="chart10">
+                        <th style="cursor:pointer;text-decoration:underline" onclick="renderTrendGraph('4434-3-2014,4588-4-2014,4029-1-2015,4921-2-2015,5450-3-2015,5601-4-2015,5716-1-2016,5811-3-2016,5779-4-2016,5753-2-2016,5815-1-2017','Hosa Road')">Hosa Road</th>
+                        <td>₹ 5815</td>
+                            <td>
+                                <span class="growth"><img src="https://d3e6ys0v0tcm7i.cloudfront.net/images/arrow.png"></span>
+                                <span>₹ 62/sqft</span>
+                             </td>
+                                            </tr>
+
+                    </tbody>
+                </table>
+            <p style="font-size:10px;font-style:italic">*Growth is showing how much amount increase from previous quarter</p>
+            </div>
+            </div>
+    </div>
+    <div class="property-container container-fluid">
+        <div class="property-container-head">
+            <a>BANGALORE PROPERTIES</a>
+        </div>
+        <div class="property-content">
+            <ngb-carousel *ngIf="images">
+              <ng-template ngbSlide>
+                <img [src]="images[0]" alt="Random first slide">
+                <div class="carousel-caption">
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <img [src]="images[1]" alt="Random second slide">
+                <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <img [src]="images[2]" alt="Random third slide">
+                <div class="carousel-caption">
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+              </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+    <div class="property-container container-fluid">
+        <div class="property-container-head">
+            <a>BANGALORE PROPERTIES</a>
+        </div>
+        <div class="property-content">
+            <ngb-carousel *ngIf="images">
+              <ng-template ngbSlide>
+                <img [src]="images[0]" alt="Random first slide">
+                <div class="carousel-caption">
+                  <h3>First slide label</h3>
+                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <img [src]="images[1]" alt="Random second slide">
+                <div class="carousel-caption">
+                  <h3>Second slide label</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+              </ng-template>
+              <ng-template ngbSlide>
+                <img [src]="images[2]" alt="Random third slide">
+                <div class="carousel-caption">
+                  <h3>Third slide label</h3>
+                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+              </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+</div>
+
